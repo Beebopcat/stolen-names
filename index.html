@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#10171c"><title>Stolen Names</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<main id="book" aria-label="Stolen Names">
+ <header class="book-bar"><div><span class="eyebrow">A CHOOSE-YOUR-OWN HORROR BOOK</span><strong>Stolen Names</strong></div><div class="header-controls"><button id="return-library" aria-label="Return to story library">← Library</button><button id="play" aria-pressed="false" aria-label="Play narration and music" disabled>Play</button><button id="menu" title="Story settings" aria-label="Open story settings">⚙</button></div></header>
+ <section id="welcome" class="welcome" aria-labelledby="welcome-title">
+  <div class="welcome-art" aria-hidden="true"></div><div class="welcome-copy"><span class="eyebrow">AN ILLUSTRATED BRANCHING ADVENTURE</span><h1 id="welcome-title">Some debts<br>should never<br>be inherited.</h1><p>A country has lost its names. Walk three haunted roads, meet the prisoners of the Mourning Crown and decide what a promise is worth.</p><p class="quiet">A complete first adventure with seven endings. Slow, atmospheric horror with unsettling creature art. No timed choices or jump scares.</p><button id="continue" class="primary" hidden>Continue saved journey</button><button id="start" class="primary">Begin a new book</button><div class="welcome-tools"><button id="welcome-import">Import a journey</button><button id="welcome-endings">Discovered endings</button></div></div>
+ </section>
+ <section id="reader" class="reader" hidden aria-label="Story and choices">
+  <figure id="illustration" class="illustration"><img id="art" alt=""><figcaption id="art-caption"></figcaption><div class="illustration-shade" aria-hidden="true"></div></figure>
+  <section class="reading-pane"><div class="page-heading"><span id="chapter" class="eyebrow"></span><h1 id="page-title" tabindex="-1"></h1></div><div id="prose" class="prose" tabindex="0" aria-label="Story text, scroll to read"></div><div class="decisions"><span id="choice-label" class="eyebrow">YOUR NEXT CHOICE</span><div id="choices"></div></div></section>
+ </section>
+ <footer id="journey-footer" class="journey-footer" hidden><button id="back" aria-label="Undo the last story choice">Back</button><div id="resources" aria-label="Your resources"></div><button id="satchel">Keepsakes</button></footer>
+<div id="narration-tools" class="narration-tools" hidden><button id="rewind-audio" aria-label="Rewind narration fifteen seconds">−15s</button><button id="forward-audio" aria-label="Fast forward narration fifteen seconds">+15s</button><button id="restart-page">Restart page</button><span id="audio-time">—</span><label>Visited pages <select id="route-checkpoints" aria-label="Select a visited checkpoint"></select></label><button id="route-current" hidden>Current journey</button></div>
+ <div id="status" role="status" aria-live="polite">Your choices can be saved in this browser.</div>
+</main>
+<dialog id="dialog" aria-labelledby="dialog-title"><form method="dialog"><button class="close" aria-label="Close menu" value="close">Close</button></form><h2 id="dialog-title"></h2><div id="dialog-body"></div></dialog>
+<input id="save-file" type="file" accept=".json,application/json" hidden>
+<audio id="music" preload="none" loop></audio>
+<script type="module" src="app.js"></script>
+</body></html>
