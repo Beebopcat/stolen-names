@@ -4,7 +4,9 @@
 
 [**▶ Live demo**](https://beebopcat.github.io/stolen-names/) · [**Play on caseyshingledecker.com**](https://caseyshingledecker.com/demos/top-secret/borrowed-names/) · [**Source**](https://github.com/Beebopcat/stolen-names)
 
-[![Stolen Names cover over a rainy night street, with the Begin a new book and Import a journey buttons.](docs/media/01.webp)](https://beebopcat.github.io/stolen-names/)
+[![Stolen Names promotional cover art.](docs/media/design-cover.webp)](https://beebopcat.github.io/stolen-names/)
+
+*Promotional cover art; gameplay screenshots appear below.*
 
 > **Status:** the game files are being added to this repository. Until `index.html` is at the repository root, the GitHub Pages link above has nothing to show; the same game is playable on caseyshingledecker.com.
 
