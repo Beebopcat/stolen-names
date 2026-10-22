@@ -8,8 +8,6 @@
 
 *Promotional cover art; gameplay screenshots appear below.*
 
-> **Status:** the game files are being added to this repository. Until `index.html` is at the repository root, the GitHub Pages link above has nothing to show; the same game is playable on caseyshingledecker.com.
-
 ## What it is
 
 An illustrated choose-your-own horror and dark-fantasy book: walk three haunted roads, meet the prisoners of the Mourning Crown and decide what a promise is worth in the Nine Marches. The cover subtitle reads "A tale of the Nine Marches".
