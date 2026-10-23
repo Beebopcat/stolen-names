@@ -20,3 +20,17 @@
 .narration-tools{display:flex;align-items:center;gap:6px;flex-wrap:wrap;padding:8px 14px;border-top:1px solid #8c7b6633;background:#191614;font-size:11px}.narration-tools button,.narration-tools select{font:inherit}.narration-tools select{max-width:230px;background:#211d19;color:inherit;border:1px solid #65594b;padding:5px}.narration-tools label{display:flex;align-items:center;gap:6px}.narration-tools #audio-time{font-variant-numeric:tabular-nums;margin-right:8px}
 
 .narration-tools[hidden]{display:none}.narration-tools{flex:none}.narration-tools button{min-height:30px;padding:5px 8px}@media(max-width:560px){.narration-tools{padding:5px 10px;gap:4px}.narration-tools select{max-width:160px}}
+
+@media(max-width:699px){
+ #book{height:100dvh;min-height:0;overflow:hidden}
+ #book .book-bar{flex-wrap:wrap;gap:8px;padding:8px 12px}
+ #book .book-bar button,#book .book-bar summary,#book .reading-pane button,#book .reading-pane select{min-height:44px;min-width:44px}
+ #book .reader{display:block;flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain}
+ #book .illustration{height:auto;overflow:visible;border:0}
+ #book .illustration img,#book .illustration.setting img{position:static;display:block;width:100%;height:auto;padding:0;object-fit:contain;filter:none}
+ #book .illustration-shade{display:none}
+ #book .illustration figcaption{position:static;margin:0;padding:8px 12px;font-size:11px;line-height:1.4}
+ #book .reading-pane{display:block;overflow:visible;padding:16px;min-height:0}
+ #book .prose{overflow:visible;min-height:0;height:auto;max-height:none;padding:12px 0}
+ #book .reading-tools,#book .narration-tools{flex-wrap:wrap;gap:8px}
+}

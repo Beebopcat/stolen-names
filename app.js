@@ -56,7 +56,7 @@ function stopSound(){playing=false;audio.pause();cancelVoice();owner.release();s
 function render({focus=true}={}){
  cancelVoice();$('welcome').hidden=true;$('reader').hidden=false;$('journey-footer').hidden=false;
  const p=byId[visibleState().page],art=PAGE_ART[p.id]||ART[p.art];if(transport.snapshot().unit!==p.id)transport.clear();$('chapter').textContent=p.chapter;$('page-title').textContent=p.title;
- $('prose').innerHTML=p.text.map(t=>`<p>${esc(t)}</p>`).join('');$('prose').scrollTop=0;
+ $('prose').innerHTML=p.text.map(t=>`<p>${esc(t)}</p>`).join('');$('prose').scrollTop=0;if(matchMedia('(max-width:699px)').matches)$('reader').scrollTop=0;
  $('illustration').className='illustration '+art.type;$('art').style.visibility='visible';$('art').alt=art.alt;
  $('art').onerror=()=>{$('art').style.visibility='hidden';$('art-caption').textContent='Illustration unavailable. Your story continues below.';};$('art').src=art.src;
  $('art-caption').textContent=art.caption||(art.type==='setting'?'The Mourning Crown · illustrated setting':'Creature concept art · '+(p.art==='bellwrought'?'The Bellwrought':p.art==='sexton'?'The Drowned Sexton':p.art==='cantor'?'The Hollow Cantor':'The Tallow Widow'));
